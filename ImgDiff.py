@@ -16,7 +16,7 @@ def getDifference(src1, src2):
             dx2 = pix1[i, j][1] - pix2[i, j][1]
             dx3 = pix1[i, j][2] - pix2[i, j][2]
             draw.point((i, j),
-                       (abs(dx1), abs(dx2), abs(dx3)))  # Зарисовываем ответ разницей пикселов наших картинок по модулю.
+                       (abs(dx1), abs(dx2), abs(dx3)))  # drawing difference
     ANS.save("ans.jpg", "JPEG")
     del draw
 
